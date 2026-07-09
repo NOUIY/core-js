@@ -47,6 +47,10 @@ const ignore = {
     // TODO: temporarily, to avoid issues with v4 refactoring
     '@babel/core',
   ],
+  'tests/eslint': [
+    // eslint-plugin-sonarjs does not work with typescript@7
+    'typescript',
+  ],
   'tests/observables': [
     '@babel/cli',
     'moon-unit',
