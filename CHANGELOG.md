@@ -13,10 +13,10 @@
   - Throw a `TypeError` instead of `RangeError` on non integer number `chunkSize` / `windowSize`, following [tc39/proposal-iterator-chunking/#30](https://github.com/tc39/proposal-iterator-chunking/pull/30)
   - Moved to stage 3, [May 2026 TC39 meeting](https://github.com/tc39/proposals/commit/7226f0af93443025010efcad219115cec7dc8b2a)
   - Added `/actual/` namespaces entries, unconditional forced replacement changed to feature detection
-- [`Iterator` includes stage 3 proposal](https://github.com/tc39/proposal-iterator-includes):
+- Added [`Iterator` includes stage 3 proposal](https://github.com/tc39/proposal-iterator-includes):
   - Added built-in:
     - `Iterator.prototype.includes`
-- [`Iterator` join stage 3 proposal](https://github.com/tc39/proposal-iterator-join):
+- Added [`Iterator` join stage 3 proposal](https://github.com/tc39/proposal-iterator-join):
   - Added built-in:
     - `Iterator.prototype.join`
 - Throw a `RangeError` on finite unsafe integer `limit` in `Iterator.prototype.{ drop, take }`, following [tc39/ecma262/#3776](https://github.com/tc39/ecma262/pull/3776)
@@ -34,6 +34,7 @@
 - Clarify supported Node versions in `package.json` of some missed packages (just to satisfy `publint`)
 - Compat data improvements:
   - Following [tc39/ecma262/#3776](https://github.com/tc39/ecma262/pull/3776), only [V8 ~ Chrome >= 150](https://github.com/v8/v8/commit/ce52c1d84268311648c9362e8d3bbb08fc58bd3c) properly support `Iterator.prototype.{ drop, take }`
+  - [`Iterator.prototype.{ chunks, windows }`](https://github.com/tc39/proposal-iterator-chunking) marked as [shipped in FF154](https://bugzilla.mozilla.org/show_bug.cgi?id=2047997)
   - [`Iterator.prototype.includes`](https://github.com/tc39/proposal-iterator-includes) marked as [shipped in FF154](https://bugzilla.mozilla.org/show_bug.cgi?id=2034104)
   - [`Iterator.prototype.join`](https://github.com/tc39/proposal-iterator-join) marked as [shipped in FF154](https://bugzilla.mozilla.org/show_bug.cgi?id=2047995)
   - [`Array.prototype.includes` bug](https://bugs.webkit.org/show_bug.cgi?id=309342) marked as fixed in Bun 1.3.12

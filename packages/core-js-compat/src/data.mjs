@@ -2617,6 +2617,7 @@ export const data = {
   'esnext.iterator.as-indexed-pairs': {
   },
   'esnext.iterator.chunks': {
+    firefox: '154',
   },
   // TODO: Remove from `core-js@4`
   'esnext.iterator.concat': null,
@@ -2661,6 +2662,7 @@ export const data = {
   'esnext.iterator.to-async': {
   },
   'esnext.iterator.windows': {
+    firefox: '154',
   },
   // TODO: Remove from `core-js@4`
   'esnext.iterator.zip': null,
